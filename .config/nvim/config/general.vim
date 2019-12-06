@@ -11,3 +11,5 @@
 :set mouse=a
 
 :set tags=tags;
+:set cursorline
+:highlight CursorLine gui=underline ctermbg=0

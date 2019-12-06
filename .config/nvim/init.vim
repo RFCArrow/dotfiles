@@ -26,6 +26,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     "Plug 'tpope/vim-repeat'          " Repeat plugin actions with .
     "Plug 'tpope/vim-commentary'      " Comment shortcuts
     Plug 'tpope/vim-surround'        " Surround text shortcuts
+    Plug 'tpope/vim-fugitive'        " Git wrapper
     Plug 'jiangmiao/auto-pairs' " Auto close pairs of brackets, etc.
 
 
@@ -68,7 +69,7 @@ call plug#end()
 "source $HOME/.config/nvim/config/gruvbox.vim
 
 " rainbow
-"source $HOME/.config/nvim/config/rainbow.vim
+source $HOME/.config/nvim/config/rainbow.vim
 
 " vim-cpp
 "source $HOME/.config/nvim/config/vim-cpp.vim
@@ -87,7 +88,7 @@ source $HOME/.config/nvim/config/langclient_cquery.vim
 "source $HOME/.config/nvim/config/neoformat.vim
 
 " ncm2
-"source $HOME/.config/nvim/config/ncm2.vim
+source $HOME/.config/nvim/config/ncm2.vim
 
 " vim-airline
 "source $HOME/.config/nvim/config/airline.vim
@@ -96,10 +97,13 @@ source $HOME/.config/nvim/config/langclient_cquery.vim
 "source $HOME/.config/nvim/config/vem-tabline.vim
 
 " vim-signify
-"source $HOME/.config/nvim/config/vim-signigy.vim
+source $HOME/.config/nvim/config/signify.vim
 
-" fzf TODO: Setup with ag, .gitignore, etc.
-"source $HOME/.config/nvim/config/fzf.vim
+"fugitive
+source $HOME/.config/nvim/config/fugitive.vim
+
+" fzf 
+source $HOME/.config/nvim/config/fzf.vim
 
 " nerdtree
 source $HOME/.config/nvim/config/nerdtree.vim
