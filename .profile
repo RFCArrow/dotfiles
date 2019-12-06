@@ -41,6 +41,11 @@ if [ -d "/opt/SEGGER/nrfjprog" ] ; then
     PATH="$PATH:/opt/SEGGER/nrfjprog"
 fi
 
+# set PATH so it includes crosstools-ng if it exists
+if [ -d "/opt/cross/bin" ] ; then
+    PATH="$PATH:/opt/cross/bin"
+fi
+
 if [ -d "$GOPATH/bin" ] ; then
     PATH="$PATH:$GOPATH/bin"
 fi
@@ -61,6 +66,8 @@ fi
 if [ -d "$HOME/cquery/build" ] ; then
     PATH="$PATH:$HOME/cquery/build"
 fi
+
+export FZF_DEFAULT_COMMAND='rg --files'
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"

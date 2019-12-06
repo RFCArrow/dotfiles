@@ -116,4 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+set -o vi
+bind '"jk":vi-movement-mode'
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
