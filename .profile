@@ -46,10 +46,15 @@ if [ -d "$GOPATH/bin" ] ; then
 fi
 
 # set PATH so it includes arm toolchain if it exists
-if [ -d "/opt/gcc-arm-none-eabi-7-2018-q2-update/bin" ] ; then
-    PATH="$PATH:/opt/gcc-arm-none-eabi-7-2018-q2-update/bin"
-    AEOLUS_ARM_GCC_PATH="opt/gcc-arm-none-eabi-7-2018-q2-update/bin"
-    AEOLUS_ARM_GCC_VERSION="7.3.1"
+if [ -d "$HOME/nrf52/gcc-arm-none-eabi-7-2017-q4-major/bin" ] ; then
+    PATH="$PATH:$HOME/nrf52/gcc-arm-none-eabi-7-2017-q4-major/bin"
+    AEOLUS_ARM_GCC_PATH="$HOME/nrf52/gcc-arm-none-eabi-7-2017-q4-major/bin"
+    AEOLUS_ARM_GCC_VERSION="7.2.1"
+fi
+
+# set PATH so it includes cquery if it exists
+if [ -d "/usr/bin/swig/bin" ] ; then
+    PATH="$PATH:/usr/bin/swig/bin"
 fi
 
 # set PATH so it includes cquery if it exists
@@ -59,4 +64,3 @@ fi
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-alias config='/usr/bin/git --git-dir=/home/rob/.cfg/ --work-tree=/home/rob'
