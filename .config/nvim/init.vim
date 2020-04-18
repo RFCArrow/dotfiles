@@ -24,7 +24,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'easymotion/vim-easymotion' " Motion commands
     "Plug 'qpkorr/vim-bufkill'        " Unload buffer without closing split
     "Plug 'tpope/vim-repeat'          " Repeat plugin actions with .
-    "Plug 'tpope/vim-commentary'      " Comment shortcuts
+    Plug 'tpope/vim-commentary'      " Comment shortcuts
     Plug 'tpope/vim-surround'        " Surround text shortcuts
     Plug 'tpope/vim-fugitive'        " Git wrapper
     Plug 'jiangmiao/auto-pairs' " Auto close pairs of brackets, etc.
@@ -61,7 +61,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'mhinz/vim-signify'                " Version control info in gutter
     "Plug 'rhysd/committia.vim'              " Better commit message editing
     "Plug 'powerman/vim-plugin-AnsiEsc'      " Support ANSI escape sequences/colour codes
-    "Plug 'itchyny/vim-cursorword'           " Underline words under cursor
+    Plug 'itchyny/vim-cursorword'           " Underline words under cursor
     Plug 'ryanoasis/vim-devicons'           " Icons (must be last plugin in list to work!)
 call plug#end()
 
