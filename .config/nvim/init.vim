@@ -58,7 +58,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'vim-airline/vim-airline'          " Airline layout
     Plug 'vim-airline/vim-airline-themes'   " Airline themes
     "Plug 'pacha/vem-tabline'                " Custom tabline (TODO: reconfigure)
-    Plug 'mhinz/vim-signify'                " Version control info in gutter
+    "Plug 'mhinz/vim-signify'                " Version control info in gutter
+    Plug 'airblade/vim-gitgutter'                " Version control info in gutter
     "Plug 'rhysd/committia.vim'              " Better commit message editing
     "Plug 'powerman/vim-plugin-AnsiEsc'      " Support ANSI escape sequences/colour codes
     Plug 'itchyny/vim-cursorword'           " Underline words under cursor
