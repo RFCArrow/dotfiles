@@ -7,14 +7,14 @@ call plug#begin('~/.local/share/nvim/plugged')
     "Plug 'radenling/vim-dispatch-neovim' " Dispatch tasks (neovim support)
 
     " 'IDE' plugins
-    Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+    "Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
     Plug 'ncm2/ncm2'                " Neovim completion manager
     Plug 'ncm2/ncm2-bufword'        " Neovim completion manager (current buffer completion)
     Plug 'ncm2/ncm2-path'           " Neovim completion manager (path completion)
     Plug 'wellle/tmux-complete.vim' " Neovim completion manager (tmux completion)
     " Plug 'w0rp/ale'                 " Linter/completion
     Plug 'sbdchd/neoformat'         " Code formatter
-    Plug 'sakhnik/nvim-gdb'         " GDB plugin
+	"Plug 'sakhnik/nvim-gdb'         " GDB plugin
 
     " Fuzzy find plugins
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
