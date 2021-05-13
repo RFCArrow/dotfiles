@@ -14,6 +14,10 @@ if [ -n "$BASH_VERSION" ]; then
     if [ -f "$HOME/.bashrc" ]; then
 	. "$HOME/.bashrc"
     fi
+    if [ -f "$HOME/.secrets" ]; then
+	. "$HOME/.secrets"
+    fi
+
 fi
 
 if [ -e /usr/share/terminfo/x/xterm-256color ]; then
