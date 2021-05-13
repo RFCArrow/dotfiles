@@ -15,6 +15,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     " Plug 'w0rp/ale'                 " Linter/completion
     Plug 'sbdchd/neoformat'         " Code formatter
 	"Plug 'sakhnik/nvim-gdb'         " GDB plugin
+	Plug 'ludovicchabant/vim-gutentags' " Generate ctags 
 
     " Fuzzy find plugins
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
