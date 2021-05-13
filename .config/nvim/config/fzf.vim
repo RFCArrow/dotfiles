@@ -1,5 +1,6 @@
 nnoremap <C-f> :Files<Cr>
 nnoremap <C-g> :Rg<Cr>
+nnoremap <silent>cu :Rg <C-R><C-W><CR>
 
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
