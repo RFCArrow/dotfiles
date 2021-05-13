@@ -29,6 +29,9 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'tpope/vim-surround'        " Surround text shortcuts
     Plug 'tpope/vim-fugitive'        " Git wrapper
     Plug 'jiangmiao/auto-pairs' " Auto close pairs of brackets, etc.
+	Plug 'AndrewRadev/splitjoin.vim'
+	Plug 'machakann/vim-highlightedyank'
+	Plug 'godlygeek/tabular'
 
 
     " Utility plugins
@@ -65,6 +68,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     "Plug 'powerman/vim-plugin-AnsiEsc'      " Support ANSI escape sequences/colour codes
     Plug 'itchyny/vim-cursorword'           " Underline words under cursor
     Plug 'ryanoasis/vim-devicons'           " Icons (must be last plugin in list to work!)
+	Plug 'Yggdroot/indentLine'				" Add lines to show indentation
 call plug#end()
 
 " gruvbox
